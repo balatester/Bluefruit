@@ -4,7 +4,7 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     console.log(device.cordova);
-} // ny uuid funktion
+} 
 
 // ASCII only
 function bytesToString(buffer) {
@@ -77,6 +77,16 @@ function conn(){
 	ConnDeviceId = deviceTouchArr[1];
 	document.getElementById("debugDiv").innerHTML += "<br>"+deviceTouchArr[0]+"<br>"+deviceTouchArr[1]; //for debug:
 	ble.connect(ConnDeviceId, onConnect, onConnError);
+	ble.read(device_id);
+	ble.read(device);
+	ble.read(deviceId);
+	
+	ble.call(deviceId);
+	ble.console.print(device_id);
+	ble.console.log(device_id);
+	ble.console.log(deviceid);
+	ble.console.log(device);
+	
  }
  //succes
 function onConnect(){
