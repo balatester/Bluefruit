@@ -17,10 +17,6 @@
         <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Bluetooth development purposes" />
     </plugin>
 	
-	<plugin name="cordova-plugin-device"  spec="^2.0.2" />  <!-- uuid plugin -->
-	<engine name="android" spec="~6.4.0" />
-    <engine name="ios" spec="^4.5.3" />
-
 	</plugin>
 
 	 <plugin name="cordova-plugin-inappbrowser" spec="~2.0.1" />
