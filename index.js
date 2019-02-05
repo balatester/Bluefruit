@@ -77,7 +77,7 @@ function conn(){
 	ConnDeviceId = deviceTouchArr[1];
 	document.getElementById("debugDiv").innerHTML += "<br>"+deviceTouchArr[0]+"<br>"+deviceTouchArr[1]; //for debug:
 	ble.connect(ConnDeviceId, onConnect, onConnError);
-	ble.read(device_id);
+	/* ble.read(device_id);
 	ble.read(device);
 	ble.read(deviceId);
 	
@@ -85,7 +85,7 @@ function conn(){
 	ble.console.print(device_id);
 	ble.console.log(device_id);
 	ble.console.log(deviceid);
-	ble.console.log(device);
+	ble.console.log(device); */
 	
  }
  //succes
